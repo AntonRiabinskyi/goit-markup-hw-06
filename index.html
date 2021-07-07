@@ -454,13 +454,13 @@
         
         </div>
 
-        <form action="#" method="GET" class="contact-form">
+        <form action="#" class="contact-form">
             <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
 
             
                 <label class="modal-form-field">Имя
                     <span class="modal-form-input-wrapper">
-                        <input class="form-input" type="text" name="name" minlength="2" required />
+                        <input class="form-input" type="text" name="user-name" minlength="2" required />
                         <svg class="modal-form-icon" width=18 hidden=18 >
                             <use href="./images/sprite.svg#icon-person"></use>
                         </svg>
@@ -491,18 +491,12 @@
                     
                 </label>
 
-                      
-           
-            <div class="form-field">
-                <label class="form-lable">Комментарий
-                    <textarea name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+                <label class="modal-form-field">Комментарий
+                    <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
                 </label>
-
-            </div>    
-            
-                        
+                                    
             <label for="checkbox-policy" class="modal-form-checkbox-policy">
-                <input type="checkbox" name="policy" class="modal-form-checkbox visually-hidden" id="policy" required/>
+                <input type="checkbox" name="user-policy" id="checkbox-policy" class="modal-form-checkbox visually-hidden" required/>
                 <span class="checkbox-icon"></span>
                 Соглашаюсь с рассылкой и принимаю
                 <a class="modal-form-policy-link" href="">Условия договора</a> 
