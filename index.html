@@ -471,8 +471,7 @@
             
                 <label class="modal-form-field">Телефон
                     <span class="modal-form-input-wrapper">
-                        <input class="modal-form-input" type="tel" name="user-phone" required 
-                        pattern="(0-9){3}-(0-9){3}-(0-9){2}-(0-9){2}" title="096-111-11-11"/>
+                        <input class="modal-form-input" type="tel" name="user-phone" required  title="096-000-00-00"/>
                         <svg class="modal-form-icon" width=18 hidden=18>
                             <use href="./images/sprite.svg#icon-phone"></use>
                         </svg>
@@ -496,12 +495,13 @@
                     <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
                 </label>
                                     
-            <label for="checkbox-policy" class="modal-form-checkbox-policy">
+            
                 <input type="checkbox" name="user-policy" id="checkbox-policy" class="modal-form-checkbox visually-hidden" required/>
-                <span class="checkbox-icon"></span>
-                Соглашаюсь с рассылкой и принимаю
-                <a class="modal-form-policy-link" href="">Условия договора</a> 
-            </label>
+                     
+                <label for="checkbox-policy" class="modal-form-checkbox-policy">
+                    Соглашаюсь с рассылкой и принимаю
+                    <a class="modal-form-policy-link" href="">Условия договора</a>
+                </label>
             
             <button class="modal-btn-submit" type="submit">Отправит</button>
 

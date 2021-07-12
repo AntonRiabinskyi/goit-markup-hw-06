@@ -873,6 +873,48 @@ color: var(--primary-text-color);
   outline: none;
 }
 
+.modal-form-policy-link {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: var(--accent-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.modal-form-checkbox-policy::before {
+ display:inline-block;
+ vertical-align: middle;
+ content: "";
+ width: 16px;
+ height: 15px;
+ border: 2px solid var(--title-text-color);
+ border-radius: 2px;
+ margin-right: 7px;
+ cursor: pointer;
+}
+
+.modal-form-checkbox:checked + .modal-form-checkbox-policy::before {
+  border-color: transparent;
+  background-image: url(../images/icon/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.modal-form-checkbox:focus + .modal-form-checkbox-policy::before {
+  border-color: var(--accent-color);
+}
+
 /* лого #000000 */
 /* основной цвет текста #212121 */
 /* вторичный цвет текста #757575 */
