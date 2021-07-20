@@ -98,7 +98,6 @@ img {
 
 /*Page-heder*/
 .page-header {
- 
   border-bottom: 1px solid #ECECEC;
 }
 
@@ -143,7 +142,6 @@ img {
   height: 4px;
   border-radius: 2px;
   border-bottom: 4px solid var(--accent-color);
-  
 }
 
 /* Contact-nav */
@@ -151,6 +149,7 @@ img {
   display: flex;
   margin-left: auto;
 }
+
 .contact .item + .item {
  margin-left: 50px;
 }
